@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'myPhoto': "url(../public/images/Stadion.JPG)"
+      }
+    },
   },
   plugins: [require("@headlessui/tailwindcss")],
 };
