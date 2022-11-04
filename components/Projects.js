@@ -1,21 +1,37 @@
 import { Tab } from "@headlessui/react";
 import { ProjectTemplate } from "./ProjectTemplate";
 import blog from "../public/images/blog.png";
-import personalWebsite from "../public/images/personalWebsite.png";
 import sudoku from "../public/images/sudoku.png";
 import TodoList from "../public/images/TodoList.png";
 
 export function Projects() {
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
+
+  const tabsArray = ["Sudoku", "Todo List", "Blog"];
+
   return (
-    <div className="w-10/12 mx-auto">
+    <div className="w-9/12 mx-auto">
       <Tab.Group>
-        <Tab.List className="w-full flex justify-around h-10 bg-amber-200 rounded-xl border-2 border-neutral-100">
-          <Tab>Sudoku</Tab>
-          <Tab>Todo List</Tab>
-          <Tab>Blog</Tab>
-          <Tab>Personal Website</Tab>
+        <Tab.List className="w-full flex justify-around h-10 bg-green-900/50 rounded-xl border-2 border-neutral-100">
+          {tabsArray.map((val, i) => {
+            return (
+              <Tab
+                key={i}
+                className={({ selected }) =>
+                  classNames(
+                    "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-white ring-white ring-opacity-60 ring-offset-2 ring-offset-yellow-400 focus:outline-none focus:ring-2",
+                    selected
+                      ? "bg-emerald-900 text- shadow"
+                      : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                  )
+                }
+              >{val}</Tab>
+            );
+          })}
         </Tab.List>
-        <Tab.Panels className="text-white mt-4 w-full bg-slate-700 p-8 rounded-md">
+        <Tab.Panels className="text-white mt-4 w-full bg-green-900/70 p-8 rounded-md">
           <Tab.Panel>
             <ProjectTemplate
               name="Sudoku"
@@ -38,14 +54,6 @@ export function Projects() {
               imgSrc={blog}
               link="https://blog-two-xi-23.vercel.app"
               text="CRUD React app. I used in this project all I knew before. The blog, I created, is an app with all basic data operations. It’s very similar to To-dos List because of the tools I used but still a way bigger project. The same MongoDB, Axios, React-query stack here but with way more requests, single and list views for posts etc. Also used Headless UI with Tailwind CSS to add some behavior to the Components. All my projects are built on Next.js framework but earlier there was basically no difference between CRA and Next.js. Here I used “useRouter” hook, some query HTTP requests and Next.js Dynamic Routing."
-            ></ProjectTemplate>
-          </Tab.Panel>
-          <Tab.Panel>
-            <ProjectTemplate
-              name="Personal Website"
-              imgSrc={personalWebsite}
-              link="https://myweb-gray.vercel.app"
-              text="As my last project I created my personal website, where you can find all my previous projects. In terms of tools and complexity obviously it is the easiest one because it’s basically static website without databases, APIs etc. When I started, I wanted to use Chakra UI as a React components library but using Chakra you need to basically learn Chakra completely with-it own hooks styling etc. So, I just sticked to the Tailwind and added behavior via Headless UI. "
             ></ProjectTemplate>
           </Tab.Panel>
         </Tab.Panels>

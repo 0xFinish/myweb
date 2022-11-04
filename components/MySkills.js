@@ -16,7 +16,7 @@ export function MySkills() {
   const iconSize = 25;
 
   return (
-    <div className="flex bg-sky-700 w-7/12 p-4 rounded-xl divide-y-2 flex-col text-white">
+    <div className="flex bg-green-900 w-auto p-4 rounded-xl divide-y-2 flex-col text-white mb-60 bg-opacity-60 max-w-2xl">
       <p className="p-2 font-bold text-xl">My skills</p>
       <div className="flex py-2 text-black flex-wrap">
         <Skill>
