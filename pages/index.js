@@ -1,14 +1,10 @@
-import Image from "next/image";
-import { Arrow } from "../components/Arrow";
 import { BgImage } from "../components/BgImage";
 import { Bio } from "../components/Bio";
 import { Footer } from "../components/Footer";
 import { MySkills } from "../components/MySkills";
-import { Navbar } from "../components/Navbar";
 import { PassionedAbout } from "../components/PassionedAbout";
 import { Projects } from "../components/Projects";
 import { WelcomeText } from "../components/WelcomeText";
-import photoSource from "../public/images/Stadion.jpg";
 
 export default function Home() {
   return (
