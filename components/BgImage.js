@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bgImage from "../public/images/Stadion.jpg";
+import bgImage from "../public/images/Stadion.png";
 import React from "react";
 
 export function BgImage() {
