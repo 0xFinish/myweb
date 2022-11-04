@@ -37,7 +37,7 @@ export function Projects() {
               name="Sudoku"
               imgSrc={sudoku}
               link="https://sudoku-brown-six.vercel.app"
-              text="Created the React website for playing sudoku. Implemented sudoku solving algorithm via function programming (recursion) and sudoku unique generation algorithm with over 1 million of unique solvable combinations. Styled with pure CSS."
+              text="Created a React website for playing sudoku. Implemented the sudoku solving algorithm via function programming (recursion) and sudoku unique generation algorithm with over 1 million of unique solvable combinations. Styled with pure CSS."
             ></ProjectTemplate>
           </Tab.Panel>
           <Tab.Panel>
@@ -45,7 +45,7 @@ export function Projects() {
               name="Todo List"
               imgSrc={TodoList}
               link="https://reactquerytodos.vercel.app"
-              text="Basic React app for using To-dos. I wanted to learn react-query but I had no need for it, because in Sudoku you basically don’t use Database etc. To-dos List is perfect example of using MongoDB with node.js driver and fetching all the data via react-query over axios promise-based http requests to simple API in Next.js. It was my first-time using Tailwind CSS, which I really like now."
+              text="Basic React app for creating to-dos. I wanted to learn react-query but I had no need for it, since you don’t use Database etc. in Sudoku. To-dos List is perfect example of using MongoDB with node.js driver and fetching all the data via react-query over axios promise-based http requests to simple API in Next.js. It was my first-time using Tailwind CSS, which I really enjoy now."
             ></ProjectTemplate>
           </Tab.Panel>
           <Tab.Panel>
@@ -53,7 +53,7 @@ export function Projects() {
               name="Blog"
               imgSrc={blog}
               link="https://blog-two-xi-23.vercel.app"
-              text="CRUD React app. I used in this project all I knew before. The blog, I created, is an app with all basic data operations. It’s very similar to To-dos List because of the tools I used but still a way bigger project. The same MongoDB, Axios, React-query stack here but with way more requests, single and list views for posts etc. Also used Headless UI with Tailwind CSS to add some behavior to the Components. All my projects are built on Next.js framework but earlier there was basically no difference between CRA and Next.js. Here I used “useRouter” hook, some query HTTP requests and Next.js Dynamic Routing."
+              text="CRUD React app. I used everything I knew before in this project. The blog I created is an app with all basic data operations. It’s very similar to the To-dos List because of the tools I used, yet this project is a bigger one. The same MongoDB, Axios, React-query stack here but with way more requests, single and list views for posts etc. Also used Headless UI with Tailwind CSS to add some behavior to the components. All my projects are built on Next.js framework but earlier there was basically no difference between CRA and Next.js. Here I used “useRouter” hook, some query HTTP requests and Next.js Dynamic Routing."
             ></ProjectTemplate>
           </Tab.Panel>
         </Tab.Panels>
