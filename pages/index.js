@@ -17,7 +17,7 @@ export default function Home() {
           <MySkills></MySkills>
         </div>
       </div>
-      <div className="w-full z-10 mt-36">
+      <div className="w-full z-10 mt-8">
         <Projects></Projects>
       </div>
       <Bio></Bio>
